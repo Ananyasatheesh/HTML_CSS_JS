@@ -20,8 +20,8 @@ ramuSomu("Hello Ramu and Somu",function(){
 
 
 //OWN EXAMPLE
-function student () {
-    console.log("Do a project with")
+function student (domain) {
+    console.log("Do a project with",domain)
 }
 function chatGPT (msg, mainCallback) {
     setTimeout( function() {
@@ -31,7 +31,7 @@ function chatGPT (msg, mainCallback) {
 }
 
 chatGPT("What type of Project?", function(){
-    student()
+    student("MERN")
 })
 
 //When passing a function as an argument mostly anonymous function is used (without func name)

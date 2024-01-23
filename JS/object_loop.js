@@ -94,13 +94,28 @@ arr6.forEach(element => {
     console.log(element)
 }); 
 
-//FOR IN USING OBJECT
+// //FOR IN USING OBJECT
 var studentDetails2 = {}
 studentDetails2["Name"] = "Anan";
 studentDetails2["Age"] = "28";
 studentDetails2["Clg"] = "PSG";
-console.log("For in using Obj")
-for (const key in studentDetails2) {
-    console.log(key,":", studentDetails2[key]) 
+// console.log("For in using Obj")
+// for (const key in studentDetails2) {
+//     console.log(key,":", studentDetails2[key]) 
+// }
+
+//FOR EACH USING OBJECTS
+studentDetails2 = Object.entries(studentDetails2)
+studentDetails2.forEach(([key,element]) => {
+    console.log(key)
+})
+
+//FOR OF
+for (key of studentDetails2){
+    console.log(key)
 }
 
+
+for ([key, value] of studentDetails2){
+    console.log(key)
+}
