@@ -1,0 +1,31 @@
+
+.container, .c2{
+    display: flex;
+    flex-direction: row;
+}
+
+.item{
+    padding-right: 10%;
+    margin-left: 20px;
+    
+}
+.item2{
+    margin-right: 10px;
+    text-indent: 20%;
+}
+
+.item ul {
+    white-space: nowrap;
+    list-style-type: none;
+}
+
+.item li {
+    margin-bottom: 5px;
+}
+
+@media(max-width:800px) {
+    .container, .c2{
+        
+        flex-direction: column;
+    }
+}
